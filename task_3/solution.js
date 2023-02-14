@@ -1,15 +1,9 @@
 function renderCartItem(item) {
-    const product = item;
+    const product;
 
 
 
     // Задание №3.1. Формирование строки корзины
-    product = {
-        id: 1,
-        title: 'Пицца',
-        count: 5,
-        price: '500.00'    
-        };
     
     // product - объект вида {id: id, title: title, count: count, price: price}
     // например, {id: 1, title: 'Пицца', count: 5, price: '500.00'}, где
@@ -18,13 +12,10 @@ function renderCartItem(item) {
     // price - цена
     // count - количество
 
-let itemCountText = "";
+let itemCountText;
+let sum = count * price;
 
-itemCountText = itemCountText + (count × price + '₽');
-
-let sum = count × price;
-
-itemCountText = itemCountText + (count × price + '₽' = sum + '₽');
+itemCountText = itemCountText + (count * price + '₽ =' + sum + '₽');
 
     // сформируйте строку itemCountText вида:
     // количество × цена ₽ = стоимость ₽
