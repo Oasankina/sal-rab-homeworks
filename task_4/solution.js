@@ -11,12 +11,12 @@ function parseProducts(json) {
 };
 
 function renderProductsCards(json) {
-    clearProductsCards();
+    clearProducts();
     products = parseProducts(json);
     length = products.length;
 
-    for (let i = 0; i <= length - 1; i++) {
-        addProduct(this.products);
+    for (let i = 0; i < length; i+= 1) {
+        addProduct(products[i]);
     }
 }
 // Напишите функцию renderProductsCards(json)
