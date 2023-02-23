@@ -36,10 +36,8 @@
 
 
 function sendRequest(name, phone, address, goods, sum) {
-    let address = {street, house, entrance, floor, flat};
-    let client = (name + phone);
-    let goods = [title, count];
-    let order = {address, sum};
+    let data = {goods: [expected.goods[i].title; expected.goods[i].count], order: {address: (address.street + address.house + address.entrance + address.flat), sum}};
+
     data = {client, order, goods};
     let countOfGoods = goods.length;
 
@@ -47,7 +45,7 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push(goods[i].title);
     }
 
-    data.order.address = address;
+    address = data.order.address;
     data.order.sum = name + phone + address + goods + sum;
 
     data.client = 'Иван';
